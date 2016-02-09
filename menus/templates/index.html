@@ -28,7 +28,7 @@
               <td>Titulo principal </td>
             </tr>
             <tr>
-              <td><input type="text" name="titulo"></td>
+              <td><input type="text" name="titulo-principal" id="titulo-principal" ></td>
             </tr>
             <tr>
               <td>Color </td>
@@ -88,6 +88,7 @@
         <div class="col-sm-12 col-lg-12 no-padding">
         <div class="background">
           <video class="video" id="" preload="auto" src="http://newportbayproductions.com/htmlMenues/layouts/elegant/media/Cindy%20and%20Hector%20Wedding%20Highlight-HD.mp4" controls="controls" class="video" ></video>
+          <div class="titulo-principal" ><h1>Amir & Melika</h1></div>
           <div  class="fade-in Stage_Rectangle_1_id">
             <div class="iniciales">L y A</div>            
             <div class="pull-right botones"><button class="boton-3">CHAPTER SELECTION</button></div>
@@ -136,6 +137,9 @@ function readURL(input) {
 $("#background").change(function(){
     readURL(this);
 });
+$("#titulo-principal:input").bind("keyup change", function(e) {
+    $(".titulo-principal h1").text($("#titulo-principal").val());
+})
 $("#iniciales:input").bind("keyup change", function(e) {
     $(".iniciales").text($("#iniciales").val());
 })

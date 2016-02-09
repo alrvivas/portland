@@ -46,6 +46,35 @@ padding: 0px !important;
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
+.titulo-principal{
+	position: absolute;
+	z-index: 99;
+	font-size: 5.5em;
+	font-family: 'Great Vibes', cursive;
+	line-height: 50%;
+    color: #f70;
+    bottom: 5em;
+    top: auto;
+    right: 10px;
+    text-decoration: none;
+    word-wrap: break-word;
+    white-space: nowrap; 
+ 	-webkit-animation-name: titulo-principal; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 7s; /* Chrome, Safari, Opera */
+    animation-name: titulo-principal;
+    animation-duration: 7s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes titulo-principal {
+    0%   {right:-250px; top:0px;}    
+    100% {right:10px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes titulo-principal {
+     0%   {right:-250px; top:0px;}    
+    100% {right:10px; top:0px;}
+}
 .iniciales{
 	position: absolute;
 	z-index: 99;
@@ -55,7 +84,7 @@ padding: 0px !important;
     color: #f70;
     bottom: 0em;
     top: 0px;
-    left: 10px
+    left: 10px;
     text-decoration: none;
     word-wrap: break-word;
     white-space: nowrap; 
@@ -67,7 +96,7 @@ padding: 0px !important;
 /* Chrome, Safari, Opera */
 @-webkit-keyframes iniciales {
     0%   {left:-250px; top:0px;}    
-    100% {left:0px; top:0px;}
+    100% {left:10px; top:0px;}
 }
 
 /* Standard syntax */
