@@ -19,69 +19,48 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-6 col-lg-4">
-      <div class="thumbnail">
-        <table width="100%" border="0">
-          <tbody>
+    <div class="col-sm-6 col-lg-4">        
           <form>
-            <tr>
-              <td>Titulo principal </td>
-            </tr>
-            <tr>
-              <td><input type="text" name="titulo-principal" id="titulo-principal" ></td>
-            </tr>
-            <tr>
-              <td>Color </td>
-            </tr>
-            <tr>
-              <td><input type="color" name="color-titulo" value="#BB7B2C"></td>
-            </tr>
-            <tr>
-              <td>Iniciales </td>
-            </tr>
-            <tr>
-              <td><input type="text" name="iniciales" id="iniciales"></td>
-            </tr>
-            <tr>
-              <td>Color </td>
-            </tr>
-            <tr>
-              <td><input type="color" name="titulo"></td>
-            </tr>
-            <tr>
-              <td>Boton 1 </td>
-            </tr>
-            <tr>
-              <td><input type="text" name="boton-1" id="boton-1"></td>
-            </tr>
-            <tr>
-              <td>Boton 2 </td>
-            </tr>
-            <tr>
-              <td><input type="text" name="boton-2" id="boton-2"></td>
-            </tr>
-            <tr>
-              <td>Boton 3 </td>
-               <tr>
-              <td><input type="text" name="boton-3" id="boton-3"></td>
-            </tr>
-            <tr>
-              <td>Imagen Principal</td>
-            </tr>
-            <tr>
-              <td><input type="text" name="titulo"></td>
-            </tr>
-            <tr>
-              <td>Fondo</td>
-            </tr>
-            <tr>
-              <td><input type="file" name="background" id="background"></td>
-            </tr>
-            </tr>
+            <div class="form-group">
+              <label>Titulo Principal</label>
+              <input type="text" name="titulo-principal" id="titulo-principal" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Color Titulo</label>
+              <div class="input-group color">
+                <input type="text" value="#BB7B2C" class="form-control" />
+                <span class="input-group-addon"><i></i></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Iniciales </label>
+              <input type="text" name="iniciales" id="iniciales" class="form-control"></td>
+            </div>
+            <div class="form-group">
+              <label>Color Iniciales</label>
+              <input type="color" name="titulo" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Boton 1 </label>
+              <input type="text" name="boton-1" id="boton-1" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Boton 2 </label>
+              <input type="text" name="boton-2" id="boton-2" class="form-control">
+            </div>
+            <div class="form-group">
+              <lable>Boton 3 </label>
+              <input type="text" name="boton-3" id="boton-3" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Imagen Principal</label>
+              <input type="text" name="titulo">
+            </div>
+            <div class="form-group">
+              <lable>Fondo</label>
+              <input type="file" name="background" id="background" class="form-control">
+            </div>
             </form>
-          </tbody>
-        </table>
-      </div>
     </div>
     <div class="col-sm-6 col-lg-8">
       <div id="row">
@@ -114,7 +93,11 @@
 </footer>
 {% endblock %}
 {% block adicional-scripts %}
-
+<script>
+    $(function(){
+        $('.color').colorpicker();
+    });
+</script>
 <script>
 function readURL(input) {
 
