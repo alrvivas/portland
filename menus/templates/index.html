@@ -28,7 +28,7 @@
             <div class="form-group">
               <label>Color Titulo</label>
               <div class="input-group color">
-                <input type="text" value="#BB7B2C" class="form-control" />
+                <input type="text" value="#BB7B2C" class="form-control" id="color-titulo"/>
                 <span class="input-group-addon"><i></i></span>
               </div>
             </div>
@@ -135,7 +135,9 @@ $("#boton-2:input").bind("keyup change", function(e) {
 $("#boton-3:input").bind("keyup change", function(e) {
     $(".boton-3").text($("#boton-3").val());
 })
-
+$("#color-titulo:input").bind("keyup change", function(e) {
+    $(".titulo-principal h1").css('color','$('#color-titulo').val()');
+})
 $(".boton-1").bind("click", function(e) {
     $(".video").get(0).play();
     $('.video').addClass("fade-in");
