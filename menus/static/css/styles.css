@@ -9,7 +9,7 @@ padding: 0px !important;
 	opacity: 0;
 }
 .background{
-	padding: 4em 4em 5em 4em;
+	padding: 2em 4em 6em 4em;
 	position: relative;
 	background-image: url("http://www.bodasdelepe.com/wp-content/uploads/2015/09/ramo-y-playa.jpg");
 	background-size: cover;
@@ -18,7 +18,7 @@ padding: 0px !important;
     overflow: hidden;
 }
 .fade-in.Stage_Rectangle_1_id{
-	position: absolute;	margin: 0px; opacity: 1; left: 0px; width: 100%; height: 3.5em; right: auto; bottom: 2em;
+	position: absolute;	margin: 0px; opacity: 1; left: 0px; width: 100%; height: 3.5em; right: auto; bottom: 1.5em;
 	border-top: 3px solid #BB7B2C; border-bottom: 3px solid #BB7B2C;
     background: -webkit-radial-gradient(top left, rgba(255, 255, 255, 0.67), rgba(235, 235, 235, 0.67));
     background: -moz-radial-gradient(top left, rgba(255, 255, 255, 0.67), rgba(235, 235, 235, 0.67));
@@ -49,7 +49,7 @@ padding: 0px !important;
 .titulo-principal{
 	position: absolute;
 	z-index: 99;	
-    bottom: 6em;
+    bottom: 5em;
     top: auto;
     right: 10px;    
  	-webkit-animation-name: titulo-principal; /* Chrome, Safari, Opera */
@@ -64,7 +64,7 @@ padding: 0px !important;
 	text-decoration: none;
     word-wrap: break-word;
     white-space: nowrap; 
-    color: #f70;
+    color: #BB7B2C;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes titulo-principal {
@@ -74,8 +74,8 @@ padding: 0px !important;
 
 /* Standard syntax */
 @keyframes titulo-principal {
-     0%   {right:-400px; bottom:6em;}    
-    100% {right:10px; bottom:6em;}
+     0%   {right:-400px; bottom:5em;}    
+    100% {right:10px; bottom:5em;}
 }
 .iniciales{
 	position: absolute;
@@ -83,7 +83,7 @@ padding: 0px !important;
 	font-size: 5.5em;
 	font-family: 'Great Vibes', cursive;
 	line-height: 50%;
-    color: #f70;
+    color: #BB7B2C;
     bottom: 0em;
     top: 0px;
     left: 10px;
@@ -112,5 +112,5 @@ padding: 0px !important;
 .botones button{
 	border: none;
 	background: transparent;
-	color: #f70;
+	color: #BB7B2C;
 }
