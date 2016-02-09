@@ -49,7 +49,7 @@ padding: 0px !important;
 .titulo-principal{
 	position: absolute;
 	z-index: 99;	
-    bottom: 5em;
+    bottom: 6em;
     top: auto;
     right: 10px;    
  	-webkit-animation-name: titulo-principal; /* Chrome, Safari, Opera */
@@ -68,14 +68,14 @@ padding: 0px !important;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes titulo-principal {
-    0%   {right:-250px; bottom:5em;}    
+    0%   {right:-400px; bottom:5em;}    
     100% {right:10px; bottom:5em;}
 }
 
 /* Standard syntax */
 @keyframes titulo-principal {
-     0%   {right:-250px; bottom:5em;}    
-    100% {right:10px; bottom:5em;}
+     0%   {right:-400px; bottom:6em;}    
+    100% {right:10px; bottom:6em;}
 }
 .iniciales{
 	position: absolute;
