@@ -48,32 +48,34 @@ padding: 0px !important;
 
 .titulo-principal{
 	position: absolute;
-	z-index: 99;
-	font-size: 5.5em;
-	font-family: 'Great Vibes', cursive;
-	line-height: 50%;
-    color: #f70;
+	z-index: 99;	
     bottom: 5em;
     top: auto;
-    right: 10px;
-    text-decoration: none;
-    word-wrap: break-word;
-    white-space: nowrap; 
+    right: 10px;    
  	-webkit-animation-name: titulo-principal; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 7s; /* Chrome, Safari, Opera */
     animation-name: titulo-principal;
     animation-duration: 7s;
 }
+.titulo-principal h1{
+	font-size: 4.6em;
+	font-family: 'Great Vibes', cursive;
+	line-height: 50%;
+	text-decoration: none;
+    word-wrap: break-word;
+    white-space: nowrap; 
+    color: #f70;
+}
 /* Chrome, Safari, Opera */
 @-webkit-keyframes titulo-principal {
-    0%   {right:-250px; top:0px;}    
-    100% {right:10px; top:0px;}
+    0%   {right:-250px; bottom:5em;}    
+    100% {right:10px; bottom:5em;}
 }
 
 /* Standard syntax */
 @keyframes titulo-principal {
-     0%   {right:-250px; top:0px;}    
-    100% {right:10px; top:0px;}
+     0%   {right:-250px; bottom:5em;}    
+    100% {right:10px; bottom:5em;}
 }
 .iniciales{
 	position: absolute;
