@@ -9,12 +9,8 @@
 	border: 1px solid #000;
 }
 .fade-in.Stage_Rectangle_1_id{
-	position: absolute;
-	margin: 0px; 
-	opacity: 1; 
-	left: 0px; width: 100%; height: 4em; right: auto; bottom: 2em;
-	border-top: 3px solid #BB7B2C;
-    border-bottom: 3px solid #BB7B2C;
+	position: absolute;	margin: 0px; opacity: 1; left: 0px; width: 100%; height: 3.5em; right: auto; bottom: 2em;
+	border-top: 3px solid #BB7B2C; border-bottom: 3px solid #BB7B2C;
     background: -webkit-radial-gradient(top left, rgba(255, 255, 255, 0.67), rgba(235, 235, 235, 0.67));
     background: -moz-radial-gradient(top left, rgba(255, 255, 255, 0.67), rgba(235, 235, 235, 0.67));
     background: radial-gradient(top left, rgba(255, 255, 255, 0.67), rgba(235, 235, 235, 0.67));
@@ -37,15 +33,14 @@
 	animation-duration:4s;
 }
 
-
-
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
 .iniciales{
 	position: absolute;
 	z-index: 99;
-	font-size: 6em;
+	font-size: 5.5em;
 	font-family: 'Great Vibes', cursive;
 	line-height: 50%;
     color: #f70;
@@ -54,17 +49,15 @@
     left: 10px
     text-decoration: none;
     word-wrap: break-word;
-    white-space: nowrap;
-    -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */    
+    white-space: nowrap; 
  	-webkit-animation-name: iniciales; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
-    animation-delay: 2s;
+    -webkit-animation-duration: 7s; /* Chrome, Safari, Opera */
     animation-name: iniciales;
-    animation-duration: 2s;
+    animation-duration: 7s;
 }
 /* Chrome, Safari, Opera */
 @-webkit-keyframes iniciales {
-    0%   {left:-150px; top:0px;}    
+    0%   {left:-200px; top:0px;}    
     100% {left:0px; top:0px;}
 }
 
@@ -74,7 +67,7 @@
     100% {left:10px; top:0px;}
 }
 .botones{
-	margin-top: 1em;
+	margin-top: 0.8em;
 }
 .botones button{
 	border: none;
