@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+.no-padding{
+padding: 0px !important;
+}
 .video{
 	width: 100%;
 	height: 100%;
 	padding: 0em 2em 4em 2em;
+	opacity: 0;
 }
 .background{
 	padding: 4em 4em 5em 4em;
