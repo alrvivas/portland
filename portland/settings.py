@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -37,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'social.apps.django_app.default',
     'menus',
 )
 
@@ -93,11 +93,10 @@ DATABASES = {
     }
 }
 """
-"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'campoapp',
+        'NAME': 'portland',
         'USER': 'postgres',
         'PASSWORD': '123456',
         'HOST': '127.0.0.1',
@@ -109,7 +108,7 @@ DATABASES = {
 import dj_database_url
 DATABASES = {'default': dj_database_url.config()}
 DATABASES['default'] =  dj_database_url.config()
-
+"""
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
@@ -124,15 +123,37 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.8/howto/static-files/
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.static',
     'django.core.context_processors.request',
     'django.core.context_processors.media',
+    'social.apps.django_app.context_processors.backends',
+    'social.apps.django_app.context_processors.login_redirect',
 )
+
+AUTHENTICATION_BACKENDS = (
+    'social.backends.facebook.FacebookOAuth2',
+    'social.backends.google.GoogleOAuth2',
+    'social.backends.twitter.TwitterOAuth',
+    'django.contrib.auth.backends.ModelBackend',
+)
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.8/howto/static-files/
+
+
+SOCIAL_AUTH_FACEBOOK_KEY = '1079676688731168'
+SOCIAL_AUTH_FACEBOOK_SECRET = '444b5e1bc5a8eb204c5fbc44b5719870'
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+SOCIAL_AUTH_GOOGLE_OAUTH_USE_UNIQUE_USER_ID = True
+
+SOCIAL_AUTH_TWITTER_KEY = 'Tgy0nrKjI9KWggcQR3gHc1zOo'
+SOCIAL_AUTH_TWITTER_SECRET = 'wQ3lzg6EcIp8rwfuoStynuKGPk34ZBXwMTwRet89Lkn3Jxer8U'
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/index/'
+SOCIAL_AUTH_LOGIN_URL = '/'
+
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
 STATIC_URL = '/static/'
