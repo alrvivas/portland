@@ -15,9 +15,18 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.db.models import Q  
 
-
+def login(request):
+    # context = RequestContext(request, {
+    #     'request': request, 'user': request.user})
+    # return render_to_response('login.html', context_instance=context)
+    return render(request, 'login.html')
+    
 def index(request):
     page_title = "Perosonaliza tu menu"
     user = request.user    
     template_name ="index.html" 
     return render_to_response(template_name, locals(),context_instance=RequestContext(request)) 
+
+def logout(request):
+    auth_logout(request)
+    return redirect('/')
