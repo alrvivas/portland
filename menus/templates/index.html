@@ -96,6 +96,10 @@
 <script>
     $(function(){
         $('.color').colorpicker();
+        $(".select-color").bind("click change", function(e) {
+          $("color-titulo").data('colorpicker').color
+          alert($("color-titulo").data('colorpicker').color);
+        });
     });
 </script>
 <script>
@@ -135,10 +139,7 @@ $("#boton-2:input").bind("keyup change", function(e) {
 $("#boton-3:input").bind("keyup change", function(e) {
     $(".boton-3").text($("#boton-3").val());
 });
-$(".colorpicker-saturation i b").bind("click change", function(e) {
-    alert($("#color-titulo").val());
-    $(".titulo-principal").css('color', $("#color-titulo").val() );
-});
+
 $("#color-titulo").bind("click change", function(e) {
     alert($("#color-titulo").val());
     $(".titulo-principal").css('color', $("#color-titulo").val() );
