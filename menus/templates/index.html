@@ -96,9 +96,9 @@
 <script>
     $(function(){
         $('.color').colorpicker();
-        $(".select-color").bind("click change", function(e) {
-          $("color-titulo").data('colorpicker').color
-          alert($("color-titulo").data('colorpicker').color);
+        $('.color').colorpicker().on('changeColor.colorpicker', function(event){
+          alert(event.color.toHex());
+          bodyStyle.backgroundColor = event.color.toHex();
         });
     });
 </script>
