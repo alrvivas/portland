@@ -97,8 +97,9 @@
     $(function(){
         $('.color').colorpicker();
         $('.color').colorpicker().on('changeColor.colorpicker', function(event){
-          alert(event.color.toHex());
-          $(".titulo-principal").css("color", "+ event.color.toHex() +" );
+          $(".titulo-principal").css({
+            'color':  event.color.toHex()
+            });
         });
     });
 </script>
