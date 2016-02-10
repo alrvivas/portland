@@ -101,13 +101,13 @@
         $('.color').colorpicker();
         $('.color').colorpicker().on('changeColor.colorpicker', function(event){
           $(".titulo-principal h1").css({
-            'color':  event.color.toRGB()
+            'color':  event.color.toHex()
             });
         });
         $('.color-iniciales').colorpicker();
         $('.color-iniciales').colorpicker().on('changeColor.colorpicker', function(event){
           $(".iniciales").css({
-            'color':  event.color.toRGB()
+            'color':  event.color.toHex()
             });
         });
     });
