@@ -97,7 +97,7 @@
     $(function(){
         $('.color').colorpicker();
         $('.color').colorpicker().on('changeColor.colorpicker', function(event){
-          $(".titulo-principal").css({
+          $(".titulo-principal h1").css({
             'color':  event.color.toHex()
             });
         });
