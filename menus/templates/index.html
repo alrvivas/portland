@@ -97,8 +97,8 @@
     $(function(){
         $('.color').colorpicker();
         $('.color').colorpicker().on('changeColor.colorpicker', function(event){
-         
-          $(".titulo-principal").css('color', event.color.toHex() );
+          alert(event.color.toHex());
+          $(".titulo-principal").css("color", "+ event.color.toHex() +" );
         });
     });
 </script>
@@ -140,10 +140,7 @@ $("#boton-3:input").bind("keyup change", function(e) {
     $(".boton-3").text($("#boton-3").val());
 });
 
-$("#color-titulo").bind("click change", function(e) {
-    alert($("#color-titulo").val());
-    $(".titulo-principal").css('color', $("#color-titulo").val() );
-});
+
 $(".boton-1").bind("click", function(e) {
     $(".video").get(0).play();
     $('.video').addClass("fade-in");
