@@ -29,7 +29,7 @@
               <label>Color Titulo</label>
               <div class="input-group color">
                 <input type="text" value="#BB7B2C" class="form-control" id="color-titulo"/>
-                <span class="input-group-addon"><i></i></span>
+                <span class="input-group-addon select-color"><i></i></span>
               </div>
             </div>
             <div class="form-group">
@@ -135,7 +135,7 @@ $("#boton-2:input").bind("keyup change", function(e) {
 $("#boton-3:input").bind("keyup change", function(e) {
     $(".boton-3").text($("#boton-3").val());
 });
-$("#color-titulo:input").bind("keyup change", function(e) {
+$("#select-color").bind("click", function(e) {
     alert($("#color-titulo").val());
     $(".titulo-principal").css('color', $("#color-titulo").val() );
 });
