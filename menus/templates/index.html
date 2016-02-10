@@ -135,7 +135,9 @@ $("#boton-2:input").bind("keyup change", function(e) {
 $("#boton-3:input").bind("keyup change", function(e) {
     $(".boton-3").text($("#boton-3").val());
 });
-
+$("#color-titulo:input").bind("keyup change", function(e) {
+    $(".titulo-principal").css('color', $("#color-titulo").val() );
+});
 $(".boton-1").bind("click", function(e) {
     $(".video").get(0).play();
     $('.video').addClass("fade-in");
