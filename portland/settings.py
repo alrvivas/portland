@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'social.apps.django_app.default',
     'menus',
+    'pedidos',
 )
 
 MIDDLEWARE_CLASSES = (
