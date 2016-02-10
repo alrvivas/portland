@@ -30,7 +30,7 @@ def index(request):
     if request.method == 'POST':
         form_template = pedidoForm(request.POST,request.FILES)
         if form_template.is_valid():
-            template = form_empleado.save(commit = False)
+            template = form_template.save(commit = False)
             template.save()           
             return redirect(template.get_absolute_url())
     else:
