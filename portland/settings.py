@@ -142,6 +142,7 @@ AUTHENTICATION_BACKENDS = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
+SOCIAL_AUTH_SESSION_EXPIRATION = False
 
 SOCIAL_AUTH_FACEBOOK_KEY = '1079676688731168'
 SOCIAL_AUTH_FACEBOOK_SECRET = '444b5e1bc5a8eb204c5fbc44b5719870'
