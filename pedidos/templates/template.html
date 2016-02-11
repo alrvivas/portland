@@ -21,7 +21,7 @@
     <div class="col-sm-12 col-lg-12">
       <div id="row">
         <div class="col-sm-12 col-lg-12 no-padding">
-        <div class="background">
+        <div class="background" >
           <video class="video" id="" preload="auto" src="http://newportbayproductions.com/htmlMenues/layouts/elegant/media/Cindy%20and%20Hector%20Wedding%20Highlight-HD.mp4" controls="controls" class="video" ></video>
           <div class="titulo-principal" ><h1>{{template.titulo_principal}}</h1></div>
           <div  class="fade-in Stage_Rectangle_1_id">
@@ -49,28 +49,25 @@
 </footer>
 {% endblock %}
 {% block adicional-scripts %}
-<script>
-    $(function(){        
-        $(".titulo-principal h1").css({
-          'color':  {{template.color_titulo}}
-        });
-        $(".iniciales").css({
-            'color':  {{template.color_iniciales}}
-            });
-        $('.background').css({
-            'background-image': 'url(' {{template.background}} + ')',
-            'background-repeat': 'no-repeat',
-            'background-size': 'cover',
-            'background-position': 'center'
-        });
-        $(".boton-1").bind("click", function(e) {
-          $(".video").get(0).play();
-          $('.video').addClass("fade-in");
-          $('.video').css("opacity", "1"); 
-          
-        });
-        
-    });
+<script>       
+  $(".titulo-principal h1").css({
+    'color':  {{template.color_titulo}}
+  });
+  $(".iniciales").css({
+      'color':  {{template.color_iniciales}}
+      });
+  $('.background').css({
+      'background-image': 'url(' {{template.background}} + ')',
+      'background-repeat': 'no-repeat',
+      'background-size': 'cover',
+      'background-position': 'center'
+  });
+  $(".boton-1").bind("click", function(e) {
+    $(".video").get(0).play();
+    $('.video').addClass("fade-in");
+    $('.video').css("opacity", "1"); 
+    
+  });
 </script>
 {% endblock %}
 
