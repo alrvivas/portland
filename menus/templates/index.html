@@ -21,7 +21,7 @@
   <div class="row">
     <div class="col-sm-6 col-lg-4">        
       <form action=""  method="post" role="form" enctype="multipart/form-data">{% csrf_token %} 
-            <input type="hidden" name="user" id="user" value="user.pk">
+            <input type="hidden" name="user" id="user" value="{{user.pk}}">
             <div class="form-group">
               <label>Titulo Principal</label>
               <input type="text" name="titulo_principal" id="titulo-principal" class="form-control" value="Amir & Melika" required />
