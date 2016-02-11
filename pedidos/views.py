@@ -18,7 +18,7 @@ from django.db.models import Q
 @login_required(login_url='/login/')
 def template(request,template_id):
     user = request.user
-    template = get_object_or_404(Template, id=empleado_id)    
+    template = get_object_or_404(Template, id=template_id)    
     page_title = "Menu para"      
     template_name ="template.html" 
     return render_to_response(template_name, locals(),context_instance=RequestContext(request))
