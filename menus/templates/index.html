@@ -21,43 +21,44 @@
   <div class="row">
     <div class="col-sm-6 col-lg-4">        
           <form action=""  method="post" role="form" enctype="multipart/form-data">{% csrf_token %} 
+            <input type="hidden" name="user" id="user" value="">
             <div class="form-group">
               <label>Titulo Principal</label>
-              <input type="text" name="titulo_principal" id="titulo-principal" class="form-control">
+              <input type="text" name="titulo_principal" id="titulo-principal" class="form-control" value="Amir & Melika" required />
             </div>
             <div class="form-group">
               <label>Color Titulo</label>
               <div class="input-group color">
-                <input type="text" value="#BB7B2C" name="color_titulo" class="form-control" id="color-titulo"/>
+                <input type="text" value="#BB7B2C" name="color_titulo" class="form-control" id="color-titulo" required/>
                 <span class="input-group-addon select-color"><i></i></span>
               </div>
             </div>
             <div class="form-group">
               <label>Iniciales </label>
-              <input type="text" name="iniciales" id="iniciales" class="form-control"></td>
+              <input type="text" name="iniciales" id="iniciales" class="form-control" value="A&M" required />
             </div>
             <div class="form-group">
               <label>Color Iniciales</label>
               <div class="input-group color-iniciales">
-                <input type="text" value="#BB7B2C" name="color_iniciales" class="form-control" id="color-iniciales"/>
+                <input type="text" value="#BB7B2C" name="color_iniciales" class="form-control" id="color-iniciales" required/>
                 <span class="input-group-addon"><i></i></span>
               </div>
             </div>
             <div class="form-group">
               <label>Boton 1 </label>
-              <input type="text" name="boton_1" id="boton-1" class="form-control">
+              <input type="text" name="boton_1" id="boton-1" class="form-control" value="PLAY NOW" required/>
             </div>
             <div class="form-group">
               <label>Boton 2 </label>
-              <input type="text" name="boton_2" id="boton-2" class="form-control">
+              <input type="text" name="boton_2" id="boton-2" class="form-control" value="SPECIAL FATURES" required/>
             </div>
             <div class="form-group">
               <lable>Boton 3 </label>
-              <input type="text" name="boton_3" id="boton-3" class="form-control">
+              <input type="text" name="boton_3" id="boton-3" class="form-control" value="CHAPTER SELECTION" required />
             </div>            
             <div class="form-group">
               <lable>Fondo</label>
-              <input type="file" name="background" id="background" class="form-control">
+              <input type="file" name="background" id="background" class="form-control" required />
             </div>
             <div class="form-group">
               <div class=" col-sm-10">
@@ -73,7 +74,7 @@
           <video class="video" id="" preload="auto" src="http://newportbayproductions.com/htmlMenues/layouts/elegant/media/Cindy%20and%20Hector%20Wedding%20Highlight-HD.mp4" controls="controls" class="video" ></video>
           <div class="titulo-principal" ><h1>Amir & Melika</h1></div>
           <div  class="fade-in Stage_Rectangle_1_id">
-            <div class="iniciales">L y A</div>            
+            <div class="iniciales">A&M</div>            
             <div class="pull-right botones"><button class="boton-3">CHAPTER SELECTION</button></div>
             <div class="pull-right botones"><button class="boton-2">SPECIAL FATURES</button></div>
             <div class="pull-right botones"><button class="boton-1">PLAY NOW</button></div>
