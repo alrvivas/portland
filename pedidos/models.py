@@ -9,7 +9,6 @@ from imagekit.processors import ResizeToFill
 class Template(models.Model):
 	user = models.OneToOneField(User,null=True, blank=True)
 	fecha_creacion = models.DateField(auto_now_add=True, blank=True)
-	direccion = models.CharField(max_length=140,null=True)
 	titulo_principal = models.CharField(max_length=100,null=True)
 	color_titulo = models.CharField(max_length=25,null=True)
 	iniciales = models.CharField(max_length=10,null=True)
