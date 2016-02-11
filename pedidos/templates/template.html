@@ -51,13 +51,13 @@
 {% block adicional-scripts %}
 <script>       
   $(".titulo-principal h1").css({
-    'color':  {{template.color_titulo}}
+    'color':  '{{template.color_titulo}}'
   });
   $(".iniciales").css({
-      'color':  {{template.color_iniciales}}
+      'color':  '{{template.color_iniciales}}'
       });
   $('.background').css({
-      'background-image': 'url(' {{template.background}} + ')',
+      'background-image': 'url(' {{template.background.url}} + ')',
       'background-repeat': 'no-repeat',
       'background-size': 'cover',
       'background-position': 'center'
