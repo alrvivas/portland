@@ -20,7 +20,8 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-lg-4">        
-          <form action=""  method="post" role="form" enctype="multipart/form-data">{% csrf_token %} 
+      <form action=""  method="post" role="form" enctype="multipart/form-data">{% csrf_token %} 
+            {{form_template.as_p}}
             <input type="hidden" name="user" id="user" value="">
             <div class="form-group">
               <label>Titulo Principal</label>
@@ -65,7 +66,7 @@
                 <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
               </div>
             </div>
-            </form>
+      </form>
     </div>
     <div class="col-sm-6 col-lg-8">
       <div id="row">
