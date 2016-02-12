@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='template',
             name='fecha_creacion',
-            field=models.DateField(default=1, auto_now_add=True),
+            field=models.DateField(auto_now_add=True,null=True),
             preserve_default=False,
         ),
     ]
