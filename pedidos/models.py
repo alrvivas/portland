@@ -12,6 +12,7 @@ class Template(models.Model):
 	titulo_principal = models.CharField(max_length=100,null=True)
 	color_titulo = models.CharField(max_length=25,null=True)
 	iniciales = models.CharField(max_length=10,null=True)
+	color_iniciales = models.CharField(max_length=25,null=True)
 	boton_1 = models.CharField(max_length=25,null=True)
 	boton_2  = models.CharField(max_length=25,null=True)
 	boton_3 = models.CharField(max_length=25,null=True)
